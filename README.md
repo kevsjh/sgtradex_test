@@ -33,10 +33,10 @@ This Turborepo includes the following:
 - vessel table that display vessel info, vessel tracking status, simulate vessel update button and pending update status
 - document was not cleared on when to invoke /api/updated-vessel-information, so this is implemented as a simulate update button for each vessel row
 - when track btn is clicked, a timer starts/resets with timerRef based on pendingTimerMS
-- when timer reaches 2min, sends track request to backend with list of tracked vessels imo, a timeout is chained inside sendTrackRequest
+- when timer reaches 2min(repeatable), sends track request to backend with list of tracked vessels imo, a timeout is chained inside sendTrackRequest.
+- if no update is received within timeoutTimerMS, the vessel status is marked to nopending
 - vessel update button is enabled when tracking is enabled
 - vessel info is updated based on websocket connection and status is updated accordingly
-- if no update is received within timeoutTimerMS, the vessel status is marked to nopending
 
 # Getting Started
 

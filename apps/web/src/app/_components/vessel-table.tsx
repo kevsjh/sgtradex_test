@@ -17,11 +17,8 @@ import { toast } from 'sonner';
 const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';
 const socket = io(backendUrl);
 
-// const pendingTimerMS = 120000;
-// const timeoutTimerMS = 60000;
-
-const pendingTimerMS = 10000;
-const timeoutTimerMS = 5000;
+const pendingTimerMS = 120000;
+const timeoutTimerMS = 60000;
 
 /**
  * Different from initial data
