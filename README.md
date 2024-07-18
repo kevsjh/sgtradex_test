@@ -61,11 +61,15 @@ refer to [turborepo](https://turbo.build/repo/docs/getting-started/installation)
 
 ### with each other, by using their container name as a hostname
 
+```
 docker network create app_network
+```
 
 ### Build prod using new BuildKit engine
 
+```
 COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose -f docker-compose.yml build
+```
 
 ### Start prod in detached mode
 
